@@ -1,0 +1,5 @@
+import{_ as e}from"./logo-10df1204.js";import{_ as i,p as a,q as o,a1 as t}from"./framework-b8224ea1.js";const n={},d=t('<h2 id="demo" tabindex="-1"><a class="header-anchor" href="#demo" aria-hidden="true">#</a> Demo</h2><figure><img src="'+e+'" alt="Logo" width="200" height="300" tabindex="0" loading="lazy"><figcaption>Logo</figcaption></figure><p><img src="'+e+'" alt="Logo" title="Image title" width="200" loading="lazy"><img src="'+e+`" alt="Logo" height="300" loading="lazy"></p><div class="language-markdown line-numbers-mode" data-ext="md"><pre class="language-markdown"><code>![Logo](/example.png =200x300)
+
+![Logo](/example.jpg &quot;Image title&quot; =200x)
+![Logo](/example.bmp =x300)
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,4),l=[d];function s(r,m){return a(),o("div",null,l)}const p=i(n,[["render",s],["__file","image-size.html.vue"]]);export{p as default};
