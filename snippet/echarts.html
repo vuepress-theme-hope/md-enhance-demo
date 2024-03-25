@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.9" />
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html,
+      body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+        document.documentElement.classList.toggle('dark', true)
+      }
+    </script>
+    <title>ECharts | Markdown Enhance Plugin</title><meta name="description" content="Markdown Enhancement for VuePress">
+    <link rel="preload" href="/assets/style-BSL3K_a2.css" as="style"><link rel="stylesheet" href="/assets/style-BSL3K_a2.css">
+    <link rel="modulepreload" href="/assets/app--Pd2YLyB.js"><link rel="modulepreload" href="/assets/echarts.html-BUr0Uvbq.js">
+    <link rel="prefetch" href="/assets/index.html-CLcygen8.js" as="script"><link rel="prefetch" href="/assets/chartjs.html-DFLMMB2i.js" as="script"><link rel="prefetch" href="/assets/code-demo.html-ChjcLJ2A.js" as="script"><link rel="prefetch" href="/assets/flowchart.html-DKb07YtR.js" as="script"><link rel="prefetch" href="/assets/kotlin-playground.html-BzgcZGgR.js" as="script"><link rel="prefetch" href="/assets/markmap.html-CB9lC0V-.js" as="script"><link rel="prefetch" href="/assets/mermaid.html-BX9b9b8Z.js" as="script"><link rel="prefetch" href="/assets/playground.html-DZU-aGZX.js" as="script"><link rel="prefetch" href="/assets/revealjs.html-T2LU5OW2.js" as="script"><link rel="prefetch" href="/assets/sandpack.html-hKShwbrP.js" as="script"><link rel="prefetch" href="/assets/vue-playground.html-DxjEJ8TA.js" as="script"><link rel="prefetch" href="/assets/index.html-BtA-5Z7a.js" as="script"><link rel="prefetch" href="/assets/alert.html-B6tymBJ3.js" as="script"><link rel="prefetch" href="/assets/align.html-CzKDdvsP.js" as="script"><link rel="prefetch" href="/assets/attrs.html-KM6vL1Wc.js" as="script"><link rel="prefetch" href="/assets/chart.html-Gw9ptBtU.js" as="script"><link rel="prefetch" href="/assets/code-demo.html-DH8xi6bq.js" as="script"><link rel="prefetch" href="/assets/code-tabs.html-qO2NKWAM.js" as="script"><link rel="prefetch" href="/assets/component.html-DPPu8s4J.js" as="script"><link rel="prefetch" href="/assets/demo.snippet.html-Cs_Vrb3B.js" as="script"><link rel="prefetch" href="/assets/echarts.html-4Us-2USR.js" as="script"><link rel="prefetch" href="/assets/figure.html-D3k553mG.js" as="script"><link rel="prefetch" href="/assets/flowchart.html-C_K9q1jH.js" as="script"><link rel="prefetch" href="/assets/footnote.html-C7crIRO4.js" as="script"><link rel="prefetch" href="/assets/hint.html-BZ0HE9_4.js" as="script"><link rel="prefetch" href="/assets/image-mark.html-CWSXgW6q.js" as="script"><link rel="prefetch" href="/assets/image-size.html-bGhwk8xI.js" as="script"><link rel="prefetch" href="/assets/include.html--Pvw1j1F.js" as="script"><link rel="prefetch" href="/assets/kotlin-playground.html-o9QfVanR.js" as="script"><link rel="prefetch" href="/assets/mark.html-CCGwl_HY.js" as="script"><link rel="prefetch" href="/assets/markmap.html-CicOAkiD.js" as="script"><link rel="prefetch" href="/assets/mermaid.html-xzX12HBD.js" as="script"><link rel="prefetch" href="/assets/playground.html-DMWLFxdx.js" as="script"><link rel="prefetch" href="/assets/revealjs.html-VtV-klMj.js" as="script"><link rel="prefetch" href="/assets/sandpack.html-9blAPd4w.js" as="script"><link rel="prefetch" href="/assets/slide-page.html-BCVPpj-R.js" as="script"><link rel="prefetch" href="/assets/stylized.html-DpubWkbM.js" as="script"><link rel="prefetch" href="/assets/sup-sub.html-Dv38BV8k.js" as="script"><link rel="prefetch" href="/assets/tabs.html-pcMKHyMC.js" as="script"><link rel="prefetch" href="/assets/tasklist.html-CoDgojx6.js" as="script"><link rel="prefetch" href="/assets/tex.html-DB66P0wF.js" as="script"><link rel="prefetch" href="/assets/vue-playground.html-QN1NOjHn.js" as="script"><link rel="prefetch" href="/assets/404.html-CSJClJKw.js" as="script"><link rel="prefetch" href="/assets/auto-BwZvv_Gp.js" as="script"><link rel="prefetch" href="/assets/index-BPciVx7c.js" as="script"><link rel="prefetch" href="/assets/flowchart-966sEcGG.js" as="script"><link rel="prefetch" href="/assets/playground.min-DlBt3wGo.js" as="script"><link rel="prefetch" href="/assets/index-pqw0VMRF.js" as="script"><link rel="prefetch" href="/assets/index-DRWmbcXV.js" as="script"><link rel="prefetch" href="/assets/index-B6nmGEkk.js" as="script"><link rel="prefetch" href="/assets/mermaid.core-RsR1EqHG.js" as="script"><link rel="prefetch" href="/assets/reveal.esm-ssIfNQ0c.js" as="script"><link rel="prefetch" href="/assets/markdown.esm-BG2Xu2Hd.js" as="script"><link rel="prefetch" href="/assets/highlight.esm-B2Y_eiOr.js" as="script"><link rel="prefetch" href="/assets/math.esm-BZ1CfUwa.js" as="script"><link rel="prefetch" href="/assets/search.esm-DuBqnxcF.js" as="script"><link rel="prefetch" href="/assets/notes.esm-CGHfgC2r.js" as="script"><link rel="prefetch" href="/assets/zoom.esm-Ctj_eavO.js" as="script"><link rel="prefetch" href="/assets/vue-repl-BSCJt4Sl.js" as="script"><link rel="prefetch" href="/assets/codemirror-editor-CMbzB1WY.js" as="script"><link rel="prefetch" href="/assets/SandPack-CPQftnpL.js" as="script"><link rel="prefetch" href="/assets/index-suf8jImJ.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div><!--[--><!----><div class="echarts-wrapper"><div class="echarts-container" id="echarts-0"></div><div class="loading-icon-wrapper echarts-loading" style="display:flex;align-items:center;justify-content:center;height:360px;"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" preserveAspectRatio="xMidYMid" viewBox="25 25 50 50"><animateTransform attributeName="transform" type="rotate" dur="2s" keyTimes="0;1" repeatCount="indefinite" values="0;360"></animateTransform><circle cx="50" cy="50" r="20" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><animate attributeName="stroke-dasharray" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="1,200;90,200;1,200"></animate><animate attributeName="stroke-dashoffset" dur="1.5s" keyTimes="0;0.5;1" repeatCount="indefinite" values="0;-35px;-125px"></animate></circle></svg></div></div><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app--Pd2YLyB.js" defer></script>
+  </body>
+</html>
