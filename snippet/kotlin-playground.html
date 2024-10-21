@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.18" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>Kotlin Playground | Markdown Enhance Plugin</title><meta name="description" content="Markdown Enhancement for VuePress">
+    <link rel="preload" href="/assets/style-MacGJ8bm.css" as="style"><link rel="stylesheet" href="/assets/style-MacGJ8bm.css">
+    <link rel="modulepreload" href="/assets/app-Du6P1JmT.js"><link rel="modulepreload" href="/assets/kotlin-playground.html-CmAwbDPw.js">
+    <link rel="prefetch" href="/assets/index.html-CxfqtVrD.js" as="script"><link rel="prefetch" href="/assets/index.html-BFrzdJao.js" as="script"><link rel="prefetch" href="/assets/align.html-BlBJnBbg.js" as="script"><link rel="prefetch" href="/assets/attrs.html-B0EHSZn6.js" as="script"><link rel="prefetch" href="/assets/chart.html-lJ_wPgIr.js" as="script"><link rel="prefetch" href="/assets/code-demo.html-B7JJ5A6U.js" as="script"><link rel="prefetch" href="/assets/component.html-Ji58YVC6.js" as="script"><link rel="prefetch" href="/assets/demo.snippet.html-B46e6ViZ.js" as="script"><link rel="prefetch" href="/assets/echarts.html-DHTNI9Qp.js" as="script"><link rel="prefetch" href="/assets/flowchart.html-CepIRUat.js" as="script"><link rel="prefetch" href="/assets/footnote.html-BSzIoUOD.js" as="script"><link rel="prefetch" href="/assets/include.html-CnccDpJp.js" as="script"><link rel="prefetch" href="/assets/kotlin-playground.html-DlxNnWoU.js" as="script"><link rel="prefetch" href="/assets/mark.html-pdM3XXy2.js" as="script"><link rel="prefetch" href="/assets/markmap.html-CQV6Awv2.js" as="script"><link rel="prefetch" href="/assets/mermaid.html-BC8gy1xt.js" as="script"><link rel="prefetch" href="/assets/plantuml.html-Dy2oHGLY.js" as="script"><link rel="prefetch" href="/assets/playground.html-BHUO6ZKI.js" as="script"><link rel="prefetch" href="/assets/sandpack.html-B9R4FtPk.js" as="script"><link rel="prefetch" href="/assets/spoiler.html-LTIzF6LX.js" as="script"><link rel="prefetch" href="/assets/stylized.html-BLYsq1M1.js" as="script"><link rel="prefetch" href="/assets/sup-sub.html-D7kfwMh-.js" as="script"><link rel="prefetch" href="/assets/tasklist.html-DzSM1INg.js" as="script"><link rel="prefetch" href="/assets/vue-playground.html-CKQaVU8V.js" as="script"><link rel="prefetch" href="/assets/chartjs.html-CSBvm9If.js" as="script"><link rel="prefetch" href="/assets/code-demo.html-DK9KQyi5.js" as="script"><link rel="prefetch" href="/assets/echarts.html-D3KKs3co.js" as="script"><link rel="prefetch" href="/assets/flowchart.html-BSPc95o2.js" as="script"><link rel="prefetch" href="/assets/markmap.html-CCYbJNRB.js" as="script"><link rel="prefetch" href="/assets/mermaid.html-CnSs0hwo.js" as="script"><link rel="prefetch" href="/assets/playground.html-lvYz7kPi.js" as="script"><link rel="prefetch" href="/assets/revealjs.html-9u3POjGb.js" as="script"><link rel="prefetch" href="/assets/sandpack.html-DfI_efT2.js" as="script"><link rel="prefetch" href="/assets/vue-playground.html-QTsX7MpT.js" as="script"><link rel="prefetch" href="/assets/404.html-D7MAvnKD.js" as="script"><link rel="prefetch" href="/assets/auto-NuX3d2ZX.js" as="script"><link rel="prefetch" href="/assets/index-R4-nRuom.js" as="script"><link rel="prefetch" href="/assets/flowchart-CTwbLKUk.js" as="script"><link rel="prefetch" href="/assets/playground.min-BGFY9ocy.js" as="script"><link rel="prefetch" href="/assets/index-QG9LWgXI.js" as="script"><link rel="prefetch" href="/assets/index-DRWmbcXV.js" as="script"><link rel="prefetch" href="/assets/index-B9oRC6ej.js" as="script"><link rel="prefetch" href="/assets/mermaid.esm.min-C_0TmTCz.js" as="script"><link rel="prefetch" href="/assets/vue-repl-jhc4alev.js" as="script"><link rel="prefetch" href="/assets/codemirror-editor-BmSzAtbR.js" as="script"><link rel="prefetch" href="/assets/SandPack-ChqC-HqJ.js" as="script"><link rel="prefetch" href="/assets/index-CQHlu1Dw.js" as="script"><link rel="prefetch" href="/assets/setupDevtools-7MC2TMWH-B1VUxt-4.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div><div class="kotlin-playground-wrapper"><div class="header">Simple Playground</div><div class="kotlin-playground-container"><div class="kotlin-playground" theme="default"><pre>class Contact(val id: Int, var email: String)
+
+fun main(args: Array&lt;String&gt;) {
+    val contact = Contact(1, &quot;mary@gmail.com&quot;)
+    println(contact.id)
+}
+</pre><!----></div></div></div></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-Du6P1JmT.js" defer></script>
+  </body>
+</html>
