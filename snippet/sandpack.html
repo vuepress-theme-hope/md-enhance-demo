@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.31" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <title>Sandpack Playground | Markdown Enhance Plugin</title><meta name="description" content="Markdown Enhancement for VuePress">
+    <link rel="preload" href="/assets/style-Dx0fruN3.css" as="style"><link rel="stylesheet" href="/assets/style-Dx0fruN3.css">
+    <link rel="modulepreload" href="/assets/app-C7Utj2wQ.js"><link rel="modulepreload" href="/assets/sandpack-Mn388U1g.js">
+    
+  </head>
+  <body>
+    <div id="app"><!--[--><div><!--[--><div class="vp-container sandpack-wrapper"><div class="vp-container-header"><div class="vp-container-title">Vue Demo</div></div><div class="sandpack-container"><!----></div></div><!--]--></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/assets/app-C7Utj2wQ.js" defer></script>
+  </body>
+</html>
